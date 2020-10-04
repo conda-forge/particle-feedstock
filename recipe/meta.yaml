@@ -11,7 +11,7 @@ source:
   sha256: c2ade6edb22a4c038fafa4463fd1577f7a38ae2932aad8d11c52eb4a7015b571
 
 build:
-  number: 1
+  number: 3
   skip: true   # [py==30 or py==31 or py==32 or py==33 or py==34]
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -19,6 +19,7 @@ requirements:
   host:
     - pip
     - python
+    - setuptools_scm
   run:
     - attrs >=19.2
     - enum34 >=1.1  # [py<34]
