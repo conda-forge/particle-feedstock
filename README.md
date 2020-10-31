@@ -5,11 +5,9 @@ Home: https://github.com/scikit-hep/particle
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/particle-feedstock/blob/master/LICENSE.txt)
 
 Summary: Extended PDG particle data and MC identification codes
-
-
 
 Current build status
 ====================
