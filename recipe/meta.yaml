@@ -1,5 +1,5 @@
 {% set name = "particle" %}
-{% set version = "0.13.1" %}
+{% set version = "0.14.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/particle-{{ version }}.tar.gz
-  sha256: 94e034bb815abd3f8ecb3868264ac913aea0e6997e1847a9174bf9f9a430205f
+  sha256: 9b65f90e948c034091d7039055e797c3bd02a254b6ca49e6a0e28030e5f8e20d
 
 build:
   number: 0
