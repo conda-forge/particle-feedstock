@@ -22,10 +22,11 @@ requirements:
     - setuptools_scm
   run:
     - attrs >=19.2
-    - hepunits >=1.2.0
-    # Only required for [py<37] but always include so this can be noarch: python
-    - importlib_resources >=1.0
+    - deprecated
+    - hepunits >=2.0.0
+    - importlib_resources >=2.0
     - python >=3.6
+    - typing-extensions
 
 test:
   imports:
