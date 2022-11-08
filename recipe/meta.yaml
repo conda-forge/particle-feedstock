@@ -1,5 +1,5 @@
 {% set name = "particle" %}
-{% set version = "0.20.1" %}
+{% set version = "0.21.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/particle-{{ version }}.tar.gz
-  sha256: 1e8596c2818cae446a958ceb1766a91acc6c6401f01db1d23b94c24827a5c547
+  sha256: 483748834e7e81f2cd690fa0962b537f767fe8af4705c8bada68c8bbdac8a17d
 
 build:
   number: 0
@@ -19,7 +19,8 @@ requirements:
   host:
     - pip
     - python >=3.6
-    - setuptools_scm
+    - hatchling
+    - hatch-vcs
   run:
     - attrs >=19.2
     - deprecated
