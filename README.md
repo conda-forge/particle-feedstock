@@ -9,6 +9,8 @@ Package license: BSD-3-Clause
 
 Summary: Extended PDG particle data and MC identification codes
 
+Development: https://github.com/scikit-hep/particle
+
 Current build status
 ====================
 
