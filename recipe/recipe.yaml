@@ -1,0 +1,53 @@
+schema_version: 1
+
+context:
+  name: particle
+  version: 0.25.2
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/particle-${{ version }}.tar.gz
+  sha256: 1fa4bbee38bfeaef08a40b2779b4c30c5ce4fa2865a10c02acfe90679b4e61e9
+
+build:
+  number: 2
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - pip
+    - python ${{ python_min }}.*
+    - hatchling
+    - hatch-vcs
+  run:
+    - attrs >=19.2
+    - deprecated
+    - hepunits >=2.0.0
+    - importlib_resources >=2.0
+    - python >=${{ python_min }}
+    - typing-extensions >=4.5
+
+tests:
+  - python:
+      imports:
+        - particle
+        - particle.converters
+      pip_check: true
+      python_version: ${{ python_min }}.*
+about:
+  summary: Extended PDG particle data and MC identification codes
+  license: BSD-3-Clause
+  license_file: LICENSE
+  homepage: https://github.com/scikit-hep/particle
+  repository: https://github.com/scikit-hep/particle
+
+extra:
+  recipe-maintainers:
+    - eduardo-rodrigues
+    - chrisburr
+    - henryiii
+    - conda-forge/scikit-hep
