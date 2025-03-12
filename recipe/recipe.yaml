@@ -50,4 +50,4 @@ extra:
     - eduardo-rodrigues
     - chrisburr
     - henryiii
-    - scikit-hep
+    - conda-forge/scikit-hep
