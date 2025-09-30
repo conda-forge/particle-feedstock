@@ -1,6 +1,6 @@
 {% set name = "particle" %}
-{% set version = "0.25.4" %}
-{% set python_min = "3.8" %}
+{% set version = "0.26.0" %}
+{% set python_min = "3.9" %}
 
 
 package:
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/particle-{{ version }}.tar.gz
-  sha256: bfa77d8aa073e6b498f1ae2d4d4926b707662b060fb23eb986a7cdb4931f58af
+  sha256: 11c869465f5467efb975dcc77e2327e2c4e3691de755ebcf853f504b2974ba16
 
 build:
   number: 0
@@ -25,7 +25,7 @@ requirements:
   run:
     - attrs >=19.2
     - deprecated
-    - hepunits >=2.0.0
+    - hepunits >=2.4.0
     - importlib_resources >=2.0
     - python >={{ python_min }}
     - typing-extensions >=4.5
