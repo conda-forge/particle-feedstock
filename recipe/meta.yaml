@@ -25,7 +25,7 @@ requirements:
   run:
     - attrs >=19.2
     - deprecated
-    - hepunits >=2.0.0
+    - hepunits >=2.4.0
     - importlib_resources >=2.0
     - python >={{ python_min }}
     - typing-extensions >=4.5
