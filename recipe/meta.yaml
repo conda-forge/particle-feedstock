@@ -1,5 +1,5 @@
 {% set name = "particle" %}
-{% set version = "0.26.1" %}
+{% set version = "0.26.2" %}
 {% set python_min = "3.9" %}
 
 
@@ -9,10 +9,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/particle-{{ version }}.tar.gz
-  sha256: 107698d0ad8d56d6568ef97367f424e5d672a14087a5de31539d6218257590c7
+  sha256: 23cc4315f90d07d9faf59f813dba6d1200868a01595e37d7c956ebd0809d672d
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
