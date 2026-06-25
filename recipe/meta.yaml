@@ -1,6 +1,6 @@
 {% set name = "particle" %}
 {% set version = "1.0.0" %}
-{% set python_min = "3.9" %}
+{% set python_min = "3.10" %}
 
 
 package:
@@ -26,7 +26,6 @@ requirements:
     - attrs >=22.2.0
     - hepunits >=2.4.0
     - python >={{ python_min }}
-    - typing-extensions >=4.5
 
 test:
   imports:
