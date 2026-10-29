@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.0.1"
+  version: "1.1.0"
   python_min: "3.10"
 
 package:
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/particle/particle-${{ version }}.tar.gz
-  sha256: 3f2ec4dbb8953c90ba83b891d6534cd82dc1aece4111b79998ff284ce377a922
+  sha256: bd55165de5754e08d7c9137d96badcda5540f8f6014dec9680c96b7782e6cd26
 
 build:
   number: 0
